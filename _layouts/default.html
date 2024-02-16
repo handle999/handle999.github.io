@@ -40,7 +40,8 @@
         {% endif %}
 
         {% if site.sidebar_links %}
-        <!-- 添加列表展示 sidebar_links 信息 -->
+        <!-- 添加列表展示 sidebar_links 信息。注意header不能直接li，需要一个nav -->
+        <nav>
         {% for link in site.sidebar_links %}
           {% if link.title == "Email" %}
             <li><strong>{{ link.title }}:</strong> <a href="mailto:{{ link.url }}" target="_blank">{{ link.url }}</a></li>
@@ -50,6 +51,7 @@
             <li><strong>{{ link.title }}:</strong> {{ link.url }}</li>
           {% endif %}
         {% endfor %}
+        </nav>
         {% endif %}
       </header>
       <section>
