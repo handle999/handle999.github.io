@@ -42,7 +42,9 @@
         {% if site.sidebar_links %}
         <!-- 添加列表展示 sidebar_links 信息 -->
         {% for link in site.sidebar_links %}
-          {% if link.title == "Email" or link.title == "GitHub" %}
+          {% if link.title == "Email" %}
+            <li><strong>{{ link.title }}:</strong> <a href="mailto:{{ link.url }}" target="_blank">{{ link.url }}</a></li>
+          {% elsif link.title == "GitHub" %}
             <li><strong>{{ link.title }}:</strong> <a href="{{ link.url }}" target="_blank">{{ link.url }}</a></li>
           {% else %}
             <li><strong>{{ link.title }}:</strong> {{ link.url }}</li>
