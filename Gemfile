@@ -1,19 +1,30 @@
-# frozen_string_literal: true
+source "https://rubygems.org"
 
-# 原来是https://rubygems.org/，会报错，所以改用国内镜像
-source "https://gems.ruby-china.com/"
+# Hello! This is where you manage which Jekyll version is used to run.
+# When you want to use a different version, change it below, save the
+# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
+#
+#     bundle exec jekyll serve
+#
+# This will help ensure the proper Jekyll version is running.
+# Happy Jekylling!
 
-gemspec
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]    # need this one. add
 
-# 各种报错没有webrick，所以加上这个依赖（相当于import？）
-# 这些也是参照github的说明，以及报错查询
-gem "faraday-retry"
-gem "github-pages", group: :jekyll_plugins
-gem "jekyll", "3.9.5"
-gem "wdm", ">= 0.1.0" if Gem.win_platform?
-gem "webrick"
+gem "github-pages", "228", group: :jekyll_plugins
 
+# If you want to use Jekyll native, uncomment the line below.
+# To upgrade, run `bundle update`.
 
-# 好了，现在可以运行了，执行如下命令即可
-# bundle exec jekyll serve
-# 然后在localhost:4000查看网页
+gem "webrick"           # must add
+gem "jekyll", "3.9.3"   # control version. 3.9.4 is not allowed
+
+gem "wdm", "~> 0.1.0" if Gem.win_platform?
+
+# If you have any plugins, put them here!
+group :jekyll_plugins do
+  # gem "jekyll-archives"
+  gem "jekyll-feed"
+  gem 'jekyll-sitemap'
+  gem 'hawkins'
+end
