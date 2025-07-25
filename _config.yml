@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Haoyu Han"
   avatar           : "handle999.png"
-  bio              : "Anyway the wind blows..."
+  bio              : "M.S., CS, BIT"
   location         : "Beijing, China"
-  employer         : "Beijing Institute of Technology"
+  employer         : 
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : #"http://yourfullgooglescholarurl.com"
   email            : "hanhy@bit.edu.cn"
