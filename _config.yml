@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Haoyu Han"
   avatar           : "handle999.png"
-  bio              : "Beijing Institute of Technology"
+  bio              : "Anyway the wind blows..."
   location         : "Beijing, China"
-  employer         :
+  employer         : "Beijing Institute of Technology"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : #"http://yourfullgooglescholarurl.com"
-  email            : "hyhan@bit.edu.cn"
+  email            : "hanhy@bit.edu.cn"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : #"http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0009-0001-8653-8762"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username

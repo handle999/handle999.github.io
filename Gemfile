@@ -18,6 +18,9 @@ gem "github-pages", "228", group: :jekyll_plugins
 
 gem "webrick"           # must add
 gem "jekyll", "3.9.3"   # control version. 3.9.4 is not allowed
+# Unable to load the EventMachine C extension; To use the pure-ruby reactor, require 'em/pure_ruby'
+# E:/Softwares/Ruby/Ruby30-x64/lib/ruby/gems/3.0.0/gems/eventmachine-1.2.7-x64-mingw32/lib/rubyeventmachine.rb:2:in `require': cannot load such file -- 3.0/rubyeventmachine (LoadError)
+gem 'eventmachine', github: 'eventmachine/eventmachine'   # use github version
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
