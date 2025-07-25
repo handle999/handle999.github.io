@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Haoyu Han / Homepage"
 title_separator          : "-"
-name                     : &name "Hanoyu Han"
+name                     : &name "Haoyu Han"
 description              : &description "This man is so lazy that he left nothing."
 url                      : https://handle999.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
